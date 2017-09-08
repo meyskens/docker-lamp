@@ -12,6 +12,7 @@ services:
       - '8080:80'
     volumes:
       - ./www/:/var/www/html
+      - ./phpmyadmin/:/var/www/html/phpmyadmin
     links: 
       - mysql
     depends_on:
